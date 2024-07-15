@@ -1,0 +1,2 @@
+# rootme
+Termux Root Access
