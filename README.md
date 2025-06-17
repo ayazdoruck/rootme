@@ -22,7 +22,7 @@ Bu betik, [Termux](https://termux.com/) uygulamasında **Kali Linux** ortamını
 2.  **Betik Dosyasını İndirin:** Aşağıdaki komutu kullanarak `rootme.sh` betiğini indirin:
 
     ```bash
-    wget [https://raw.githubusercontent.com/AyazDoruck/RootMe/main/rootme.sh](https://raw.githubusercontent.com/AyazDoruck/RootMe/main/rootme.sh)
+    wget https://raw.githubusercontent.com/AyazDoruck/rootme/main/rootme.sh
     ```
     *(Yukarıdaki linki kendi GitHub depona göre düzenlemeyi unutma!)*
 
