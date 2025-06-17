@@ -54,13 +54,9 @@ Bu betik, [Termux](https://termux.com/) uygulamasında **Kali Linux** ortamını
 
 Geliştirmelere açıktır! Her türlü katkı, hata raporu veya özellik önerisi memnuniyetle karşılanır. Lütfen bir Pull Request açmaktan veya Issue oluşturmaktan çekinmeyin.
 
-## Lisans
-
-Bu proje MIT Lisansı ile lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasına bakın.
 
 ## İletişim
 
-* **Ayaz Doruk (Proje Sahibi)**
 * **Instagram:** [@ayazdoruck](https://www.instagram.com/ayazdoruck/)
 
 ---
