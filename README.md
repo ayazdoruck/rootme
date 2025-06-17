@@ -1,8 +1,8 @@
-# RootMe Termux Kurulum Betiği
+# 🚀 RootMe Termux Kurulum Betiği
 
 Bu betik, [Termux](https://termux.com/) uygulamasında **Kali Linux** ortamını kolayca kurmak ve kullanmak için tasarlanmıştır. `proot` teknolojisi sayesinde, root erişimine ihtiyaç duymadan sanal bir Kali Linux ortamı elde edersiniz. İki farklı kullanım modu sunar: Termux açılışında otomatik Kali'ye geçiş veya komutla manuel başlatma.
 
-## Özellikler
+## ✨ Özellikler
 
 * **Kolay Kurulum:** Tek bir betikle tüm bağımlılıkları ve Kali Linux temel sistemini kurar.
 * **İki Modlu Çalışma:**
@@ -12,11 +12,11 @@ Bu betik, [Termux](https://termux.com/) uygulamasında **Kali Linux** ortamını
 * **Yedekleme:** Mevcut `bash.bashrc` dosyanızın yedeğini alır.
 * **AnLinux Entegrasyonu:** Kali Linux kurulumu için [AnLinux](https://github.com/EXALAB/AnLinux) kaynaklarını kullanır.
 
-## Gereksinimler
+## ⚙️ Gereksinimler
 
 * [Termux](https://termux.com/) uygulaması yüklü bir Android cihaz.
 
-## Kurulum ve Kullanım
+## 🛠️ Kurulum ve Kullanım
 
 1.  **Termux'u Açın:** Cihazınızda Termux uygulamasını başlatın.
 2.  **Betik Dosyasını İndirin:** Aşağıdaki komutu kullanarak `rootme.sh` betiğini indirin:
@@ -45,17 +45,17 @@ Bu betik, [Termux](https://termux.com/) uygulamasında **Kali Linux** ortamını
 
 6.  **Kurulumu Tamamlayın:** Betik gerekli paketleri ve Kali Linux'u kuracaktır. İşlem tamamlandığında Termux'u yeniden başlatmanız istenecektir.
 
-## Ek Bilgiler
+## 💡 Ek Bilgiler
 
 * Kali Linux ortamından çıkmak için genellikle `exit` komutunu kullanabilirsiniz.
 * Herhangi bir sorunla karşılaşırsanız, `bash.bashrc.bak` dosyasını kullanarak orijinal `bash.bashrc` dosyanıza geri dönebilirsiniz. (`cp /data/data/com.termux/files/usr/etc/bash.bashrc.bak /data/data/com.termux/files/usr/etc/bash.bashrc`)
 
-## Katkıda Bulunma
+## 🤝 Katkıda Bulunma
 
 Geliştirmelere açıktır! Her türlü katkı, hata raporu veya özellik önerisi memnuniyetle karşılanır. Lütfen bir Pull Request açmaktan veya Issue oluşturmaktan çekinmeyin.
 
 
-## İletişim
+## 📧 İletişim
 
 * **Instagram:** [@ayazdoruck](https://www.instagram.com/ayazdoruck/)
 
