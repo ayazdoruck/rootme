@@ -1,71 +1,67 @@
-# 🚀 RootMe Termux Kurulum Betiği
+# RootMe: Termux Environment Provisioning Script
 
-Bu betik, [Termux](https://termux.com/) uygulamasında **Kali Linux** ortamını kolayca kurmak ve kullanmak için tasarlanmıştır. `proot` teknolojisi sayesinde, root erişimine ihtiyaç duymadan sanal bir Kali Linux ortamı elde edersiniz.
+**Description:**
+RootMe is an automation utility designed to deploy and orchestrate a Kali Linux environment within the Termux ecosystem using `proot` abstraction. It facilitates a seamless, rootless virtualization layer, allowing for the execution of advanced penetration testing tools on Android devices without compromising system integrity.
 
-## ✨ Özellikler
+---
 
-*   **⚡ Kolay ve Otomatik Kurulum:** Tek bir komutla gerekli tüm paketleri, bağımlılıkları ve Kali Linux'u kurar.
-*   **🛠️ İki Farklı Çalışma Modu:**
-    *   **Boot2Root:** Termux her açıldığında otomatik olarak Kali Linux başlar.
-    *   **OnlyRoot:** Termux normal başlar, istediğiniz zaman `rootme` komutu ile Kali Linux'a geçersiniz.
-*   **🛡️ Güvenli:** Mevcut `bash.bashrc` dosyanızın yedeğini alır (`bash.bashrc.bak`), böylece bir sorun olursa geri dönebilirsiniz.
-*   **🧪 Test Modu:** Geliştiriciler için, Android cihazı olmadan betiği test etmeye yarayan simülasyon modu ( `--test` parametresi ile).
-*   **🌐 İnternet Kontrolü:** Kuruluma başlamadan önce bağlantınızı kontrol eder.
+## Key Capabilities
 
-## ⚙️ Gereksinimler
+* **Automated Provisioning:** Streamlined deployment of dependencies, core packages, and the Kali Linux filesystem.
+* **Dual Operational Modes:**
+    * **Boot2Root:** Persistent initialization that launches the Kali environment automatically upon terminal startup.
+    * **OnlyRoot:** On-demand execution via the `rootme` command for specialized workflows.
+* **Configuration Redundancy:** Automatic backup of the existing `bash.bashrc` to ensure rapid system recovery and rollback capability.
+* **Mock Environment Simulation:** A dedicated `--test` flag for developers to validate script logic on non-Android Linux/WSL distributions.
+* **Pre-flight Connectivity Validation:** Integrated network status checks to prevent installation failures due to unstable repository access.
 
-*   [Termux](https://termux.com/) uygulaması yüklü bir Android cihaz.
-*   Aktif internet bağlantısı.
-*   En az 2GB boş depolama alanı (önerilen).
+## Prerequisites
 
-## 🛠️ Kurulum ve Kullanım
+* **Platform:** Termux (Android Terminal Emulator).
+* **Network:** Stable internet connectivity for remote package fetching.
+* **Storage:** Minimum of 2GB available disk space (Recommended).
 
-1.  **Termux'u Açın ve Paketleri Güncelleyin:**
-    ```bash
-    pkg update && pkg upgrade
-    ```
+## Installation and Implementation
 
-2.  **Betiği İndirin:**
-    ```bash
-    wget https://raw.githubusercontent.com/AyazDoruck/rootme/main/rootme.sh
-    ```
+Execute the following command sequence to initialize the environment:
 
-3.  **Çalıştırma İzni Verin:**
-    ```bash
-    chmod +x rootme.sh
-    ```
+1. **Synchronize Package Repositories:**
+   ```bash
+   pkg update && pkg upgrade
+   ```
 
-4.  **Betiği Çalıştırın:**
-    ```bash
-    ./rootme.sh
-    ```
+2. **Fetch the Source Script:**
+   ```bash
+   wget https://raw.githubusercontent.com/AyazDoruck/rootme/main/rootme.sh
+   ```
 
-5.  **Mod Seçin:**
-    *   Kurulum sırasında size **Boot2Root** veya **OnlyRoot** seçeneklerinden birini seçmeniz istenecektir.
-    *   Seçiminizi yapın ve kurulumun tamamlanmasını bekleyin.
+3. **Modify Execution Permissions:**
+   ```bash
+   chmod +x rootme.sh
+   ```
 
-6.  **Termux'u Yeniden Başlatın:** Kurulum bittiğinde değişikliklerin aktif olması için Termux'u kapatıp açın.
+4. **Execute the Provisioning Script:**
+   ```bash
+   ./rootme.sh
+   ```
 
-## 🐛 Sorun Giderme
+5. **Post-Installation:** Restart the Termux session to apply the environmental changes and configuration updates.
 
-*   **Kurulum Hatası:** İnternet bağlantınızın stabil olduğundan emin olun.
-*   **Eski Ayarlara Dönme:** Eğer bir şeyler ters giderse, `bash.bashrc` dosyanızı yedekten geri yükleyebilirsiniz:
+## Troubleshooting and Maintenance
+
+* **Restoring Default Configuration:** If a rollback is required, restore the original shell configuration using the generated backup:
     ```bash
     cp $PREFIX/etc/bash.bashrc.bak $PREFIX/etc/bash.bashrc
     ```
-*   **Test Modu:** Betiği bilgisayarınızda (Linux/WSL/Git Bash) test etmek için:
+* **Development Testing:** To simulate the deployment logic on a standard Linux workstation:
     ```bash
     ./rootme.sh --test
     ```
 
-## 🤝 Katkıda Bulunma
+## Contributions and Support
 
-Geliştirmelere açıktır! Her türlü katkı, hata raporu veya özellik önerisi memnuniyetle karşılanır. Lütfen bir Pull Request açmaktan veya Issue oluşturmaktan çekinmeyin.
+Contributions regarding performance optimization or feature enhancements are welcome via Pull Requests. For bug reports, please utilize the repository's Issue tracker.
 
-## 📧 İletişim
-
-*   **Instagram:** [@ayazdoruck](https://www.instagram.com/ayazdoruck/)
-*   **Geliştirici:** Ayaz Doruck
-
----
-*Bu proje açık kaynaklıdır ve eğitim amaçlıdır.*
+**Developer:** ayazdoruck
+**Contact:** [Instagram/@ayazdoruck](https://www.instagram.com/ayazdoruck/)  
+*Disclaimer: This project is intended for educational purposes and ethical security research.*
