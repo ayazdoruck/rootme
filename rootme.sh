@@ -47,7 +47,7 @@ run_cmd() {
     if [[ "$TEST_MODE" == "true" ]]; then
         echo -e "${YELLOW}[SIMULASYON] Komut çalıştırıldı: $*${NC}"
     else
-        eval "$@"
+        eval "$*"
     fi
 }
 

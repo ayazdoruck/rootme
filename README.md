@@ -65,6 +65,6 @@ Contributions regarding performance optimization or feature enhancements are wel
 **Developer:** ayazdoruck
 **Contact:** [Instagram/@ayazdoruck](https://www.instagram.com/ayazdoruck/)  
 *Disclaimer: This project is intended for educational purposes and ethical security research.*
-## Lisans
+## License
 
 [MIT](LICENSE)
