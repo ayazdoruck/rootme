@@ -1,5 +1,7 @@
 # RootMe: Termux Environment Provisioning Script
 
+[![ShellCheck](https://github.com/ayazdoruck/rootme/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/ayazdoruck/rootme/actions/workflows/shellcheck.yml)
+
 **Description:**
 RootMe is an automation utility designed to deploy and orchestrate a Kali Linux environment within the Termux ecosystem using `proot` abstraction. It facilitates a seamless, rootless virtualization layer, allowing for the execution of advanced penetration testing tools on Android devices without compromising system integrity.
 
